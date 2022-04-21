@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="LinkedIn Redesign Case">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <meta name="author" content="Mehmet BACIK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Redesign Case</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon/favicon.ico">
+</head>
+
+<body>
+
+    <!-- ======= header ======= -->
+    <header class="bg-white mb-4" id="menu-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-1 col-sm-2 col-3 d-flex align-items-center justify-content-center" id="logo">
+                    <a href="#" class="d-inline-block">
+                        <img src="img/icon/logo.svg" class="d-block" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-10 col-sm-8 col-6 menu-wrapper">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-7 col-sm-4 col-6 d-flex align-items-center">
+                            <nav class="navbar navbar-expand-lg" id="navbar-area">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#menuarea" aria-controls="menuarea" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    MENU
+                                </button>
+                                <div class="collapse navbar-collapse" id="menuarea">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle feed" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Feed
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="w-100 dropdown-item" href="#">Item - 1</a></li>
+                                                <li><a class="w-100 dropdown-item" href="#">Item - 1</a></li>
+                                                <li><a class="w-100 dropdown-item" href="#">Item - 1</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link network">Network</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link jobs">Jobs</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link chat position-relative">
+                                                Chat
+                                                <span
+                                                    class="position-absolute translate-middle bg-danger rounded-circle text-white p-1 chat-rounded-bg">
+                                                    1
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link notices">Notices</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="search-main w-100 d-md-block d-sm-none d-none">
+                                <form action="#" class="search-wrapper d-flex align-items-center">
+                                    <button class="btn btn-info search-btn"></button>
+                                    <input type="text" class="form-control" placeholder="Search" name="">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-sm-8 col-6 d-flex justify-content-center align-items-center">
+                            <div class="profile-widget d-flex align-items-center">
+                                <div class="profile-image me-3">
+                                    <img src="img/header/you.jpg" class="d-block rounded-circle" alt="">
+                                </div>
+                                <div class="profile-info">
+                                    <div class="profile-name">D.KARGAEV <span>YOU</span></div>
+                                    <div class="views">367 views today <strong>+32 <i class="you-arrow"></i></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-1 col-sm-2 col-3 d-flex align-items-center justify-content-center" id="other">
+                    <a href="#" class="d-block text-center">
+                        <img src="img/header/other.svg" alt="">
+                        <span class="d-block">OTHER</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- ======= header ======= -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <!-- ======= profile ======= -->
+                        <div class="card mb-4 position-relative" id="profile-main">
+                            <div class="edit-area">
+                                <div class="edit-profile">
+                                    <span>Edit Profile</span>
+                                </div>
+
+                                <div class="edit-m"></div>
+                            </div>
+                            <img class="card-img-top" src="img/main/profile-bg.svg">
+                            <div class="card-body" id="user-area">
+                                <div class="media d-flex align-items-end flex-sm-nowrap flex-wrap">
+                                    <img class="rounded-circle align-self-center" src="img/main/user.svg"
+                                        alt="visitors">
+                                    <div class="media-body mx-4 pb-2">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="name">Dmitry Kargaev</span>
+                                            <span class="location">Saint Petersburg, Russian Federation</span>
+                                        </div>
+
+                                        <p class="card-text mb-3">Freelance UX/UI designer, 80+ projects in web design,
+                                            mobile apps (iOS & android) and creative projects. Open to offers.</p>
+                                        <div class="d-flex align-items-center btn-area">
+                                            <a href=" #" class="btn btn-primary">Contact info</a>
+                                            <a href=" #" class="btn btn-outline-primary">1,043 connections</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======= profile ======= -->
+                        <div class="w-100">
+                            <ul class="nav nav-tabs align-items-end" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-uppercase active" id="tab1-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1"
+                                        aria-selected="true">Profile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-uppercase" id="tab2-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2"
+                                        aria-selected="false">Activity & interests</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link text-uppercase" id="tab3-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3"
+                                        aria-selected="false">Articles (3)</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+                                    aria-labelledby="tab1-tab">
+                                    <!-- ======= about ======= -->
+                                    <div class="card mb-4" id="about-main">
+                                        <div class="card-header mx-3">
+                                            <span class="title">About</span>
+                                        </div>
+                                        <div class="card-body mx-3 pt-2">
+                                            <div class="d-flex flex-column">
+                                                <span class="textt">I'm more experienced in eCommerce web projects and mobile banking
+                                                    apps, but also like to work with creative projects, such as landing
+                                                    pages or unusual corporate websites. <br><br> I'm more experienced in eCommerce web projects and mobile banking
+                                                    apps, but also like to work with creative projects, such as landing
+                                                    pages or unusual corporate websites. I'm more experienced in eCommerce web projects and mobile banking
+                                                    apps, but also like to work with creative projects, such as landing
+                                                    pages or unusual corporate websites.  </span>
+                                                <span class="show-all">See More</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ======= about ======= -->
+
+                                    <!-- ======= projects ======= -->
+                                    <div class="mb-4 bg-white position-relative" id="projects-main">
+                                        <div class="title-area d-flex align-items-center ">
+                                            <span class="title">Projects</span>
+                                            <span class="text position-relative"><div class="swiper-pagination"></div></span>
+                                        </div>
+                                        <div class="swiper mySwiper projectswiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img src="img/main/project-1.jpg">
+                                                        <div class="title">Zara redesign concept</div>
+                                                        <div class="text">UX/UI design, 15.07.2019</div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img src="img/main/project-2.jpg">
+                                                        <div class="title">SCTHON event brand identity</div>
+                                                        <div class="text">Graphic design, 03.31.2019</div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img src="img/main/project-3.jpg">
+                                                        <div class="title">Drozd. Brand identity. 2016</div>
+                                                        <div class="text">Graphic design, 03.04.2016</div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img src="img/main/project-1.jpg">
+                                                        <div class="title">Zara redesign concept</div>
+                                                        <div class="text">UX/UI design, 15.07.2019</div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img src="img/main/project-2.jpg">
+                                                        <div class="title">SCTHON event brand identity</div>
+                                                        <div class="text">Graphic design, 03.31.2019</div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img src="img/main/project-3.jpg">
+                                                        <div class="title">Drozd. Brand identity. 2016</div>
+                                                        <div class="text">Graphic design, 03.04.2016</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="a-area">
+                                            <a href="#">Show all (12)</a>
+                                        </div>
+                                    </div>
+                                    <!-- ======= projects ======= -->
+
+                                    <!-- ======= skills ======= -->
+                                    <div class="mb-4">
+                                        <div class="mb-4 bg-white position-relative" id="skills-main">
+                                            <div class="title-area">
+                                                <span class="title">Skills & Endoresments</span>
+                                            </div>
+                                            <div class="swiper mySwiper skillsswiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div
+                                                                class="title d-flex align-items-center justify-content-between">
+                                                                <span class="name">User experience (UX)</span>
+                                                                <span class="ok">6</span>
+                                                            </div>
+                                                            <div class="users d-flex align-items-center"
+                                                                id="order-image-first">
+                                                                <span class="img"><img src="img/main/user1.jpg"></span>
+                                                                <span class="img"><img src="img/main/user2.jpg"></span>
+                                                                <span class="img"><img src="img/main/user3.jpg"></span>
+                                                                <span class="img"><img src="img/main/user4.jpg"></span>
+                                                                <span class="img"><img src="img/main/user5.jpg"></span>
+                                                                <span class="after">+1</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div
+                                                                class="title d-flex align-items-center justify-content-between">
+                                                                <span class="name">User interface (UI)</span>
+                                                                <span class="ok">7</span>
+                                                            </div>
+                                                            <div class="users d-flex align-items-center"
+                                                                id="order-image-second">
+                                                                <span class="img"><img src="img/main/user6.jpg"></span>
+                                                                <span class="img"><img src="img/main/user2.jpg"></span>
+                                                                <span class="img"><img src="img/main/user7.jpg"></span>
+                                                                <span class="img"><img src="img/main/user8.jpg"></span>
+                                                                <span class="img"><img src="img/main/user5.jpg"></span>
+                                                                <span class="after">+2</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div
+                                                                class="title d-flex align-items-center justify-content-between">
+                                                                <span class="name">Brand identity</span>
+                                                                <span class="ok">5</span>
+                                                            </div>
+                                                            <div class="users d-flex align-items-center"
+                                                                id="order-image-third">
+                                                                <span class="img"><img src="img/main/user9.jpg"></span>
+                                                                <span class="img"><img src="img/main/user1.jpg"></span>
+                                                                <span class="img"><img src="img/main/user4.jpg"></span>
+                                                                <span class="img"><img src="img/main/user3.jpg"></span>
+                                                                <span class="img"><img src="img/main/user10.jpg"></span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div
+                                                                class="title d-flex align-items-center justify-content-between">
+                                                                <span class="name">User experience (UX)</span>
+                                                                <span class="ok">6</span>
+                                                            </div>
+                                                            <div class="users d-flex align-items-center"
+                                                                id="order-image-fourth">
+                                                                <span class="img"><img src="img/main/user1.jpg"></span>
+                                                                <span class="img"><img src="img/main/user2.jpg"></span>
+                                                                <span class="img"><img src="img/main/user3.jpg"></span>
+                                                                <span class="img"><img src="img/main/user4.jpg"></span>
+                                                                <span class="img"><img src="img/main/user5.jpg"></span>
+                                                                <span class="after">+1</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div
+                                                                class="title d-flex align-items-center justify-content-between">
+                                                                <span class="name">User interface (UI)</span>
+                                                                <span class="ok">7</span>
+                                                            </div>
+                                                            <div class="users d-flex align-items-center"
+                                                                id="order-image-fifth">
+                                                                <span class="img"><img src="img/main/user6.jpg"></span>
+                                                                <span class="img"><img src="img/main/user2.jpg"></span>
+                                                                <span class="img"><img src="img/main/user7.jpg"></span>
+                                                                <span class="img"><img src="img/main/user8.jpg"></span>
+                                                                <span class="img"><img src="img/main/user5.jpg"></span>
+                                                                <span class="after">+2</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="#">
+                                                            <div
+                                                                class="title d-flex align-items-center justify-content-between">
+                                                                <span class="name">Brand identity</span>
+                                                                <span class="ok">5</span>
+                                                            </div>
+                                                            <div class="users d-flex align-items-center"
+                                                                id="order-image-sixth">
+                                                                <span class="img"><img src="img/main/user9.jpg"></span>
+                                                                <span class="img"><img src="img/main/user1.jpg"></span>
+                                                                <span class="img"><img src="img/main/user4.jpg"></span>
+                                                                <span class="img"><img src="img/main/user3.jpg"></span>
+                                                                <span class="img"><img src="img/main/user10.jpg"></span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="a-area">
+                                                <a href="#">Show all (17)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ======= skills ======= -->
+
+                                    <!-- ======= experience ======= -->
+                                    <div class="card mb-4" id="experience-main">
+                                        <div class="title-area">
+                                            <span class="title">Experience</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <ul class="list-unstyled">
+                                                    <li class="d-flex flex-column mb-3">
+                                                        <div class="media d-flex">
+                                                            <img class="align-self-start rounded-circle"
+                                                                src="img/main/experience1.jpg" alt="experience">
+                                                            <div class="media-body d-flex flex-column">
+                                                                <div class="title">Freelance UX/UI designer</div>
+                                                                <div class="work">
+                                                                    <span class="first">Self Employed</span>
+                                                                    <span class="second">Around the world</span>
+                                                                </div>
+                                                                <div class="date">
+                                                                    <span class="first">Jun 2016 — Present</span>
+                                                                    <span class="second">3 yrs 3 mos</span>
+                                                                </div>
+                                                                <div class="text">Work with clients and web studios as
+                                                                    freelancer. Work in next areas: eCommerce web
+                                                                    projects; creative landing pages; iOs and Android
+                                                                    apps; corporate web sites and corporate identity
+                                                                    sometimes.</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex flex-column mb-3">
+                                                        <div class="media d-flex">
+                                                            <img class="align-self-start rounded-circle"
+                                                                src="img/main/experience2.jpg" alt="experience">
+                                                            <div class="media-body d-flex flex-column">
+                                                                <div class="title">UX/UI designer</div>
+                                                                <div class="work">
+                                                                    <span class="first">Upwork</span>
+                                                                    <span class="second">International</span>
+                                                                </div>
+                                                                <div class="date">
+                                                                    <span class="first">Jun 2019 — Present</span>
+                                                                    <span class="second">3 mos</span>
+                                                                </div>
+                                                                <div class="text">New experience with Upwork system.
+                                                                    Work in next areas: UX/UI design, graphic design,
+                                                                    interaction design, UX research.</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ======= experience ======= -->
+
+                                    <!-- ======= education ======= -->
+                                    <div class="card mb-4" id="education-main">
+                                        <div class="title-area">
+                                            <span class="title">Education</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <ul class="list-unstyled">
+                                                    <li class="d-flex flex-column mb-3">
+                                                        <div class="media d-flex">
+                                                            <img class="align-self-start" src="img/main/education1.jpg"
+                                                                alt="education">
+                                                            <div class="media-body d-flex flex-column">
+                                                                <div class="title">Moscow State Linguistic University
+                                                                </div>
+                                                                <div class="detail">Bachelor's degree Field Of
+                                                                    StudyComputer and Information Systems
+                                                                    Security/Information Assurance</div>
+                                                                <div class="date">2013 — 2017</div>
+                                                                <div class="text">Additional English classes and UX
+                                                                    profile courses​.</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ======= education ======= -->
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                    Page 2
+                                </div>
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                    Page 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <!-- ======= dashboard ======= -->
+                        <div class="card mb-4" id="dashboard">
+                            <div class="title-area d-flex justify-content-between align-items-center">
+                                <span class="title">Your Dashboard</span>
+                                <a href="#" class="a-text">Go To Stats</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex flex-column">
+                                            <span class="number">367</span>
+                                            <span class="content">views today</span>
+                                        </li>
+                                        <li class="d-flex flex-column">
+                                            <span class="number">15</span>
+                                            <span class="content">posts views</span>
+                                        </li>
+                                        <li class="d-flex flex-column">
+                                            <span class="number">9</span>
+                                            <span class="content">search appereances</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======= dashboard ======= -->
+
+                        <!-- ======= visitors ======= -->
+                        <div class="card mb-4" id="visitors">
+                            <div class="title-area d-flex justify-content-between">
+                                <span class="title">Visitors</span>
+                                <a href="#" class="a-text">View All</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex align-items-center">
+                                                <img class="rounded-circle align-self-center"
+                                                    src="img/main/visitors1.jpg" alt="visitors">
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="name">Darlene Black</span>
+                                                    <span class="job">HR-manager, 10 000 connec...</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex align-items-center">
+                                                <img class="rounded-circle align-self-center"
+                                                    src="img/main/visitors2.jpg" alt="visitors">
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="name">Theresa Steward</span>
+                                                    <span class="job">iOS developer</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex align-items-center">
+                                                <img class="rounded-circle align-self-center"
+                                                    src="img/main/visitors3.jpg" alt="visitors">
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="name">Brandon Wilson</span>
+                                                    <span class="job">Senior UX designer</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex align-items-center">
+                                                <img class="rounded-circle align-self-center"
+                                                    src="img/main/visitors4.jpg" alt="visitors">
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="name">Kyle Fisher</span>
+                                                    <span class="job">Product designer at Com...</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex align-items-center">
+                                                <img class="rounded-circle align-self-center"
+                                                    src="img/main/visitors5.jpg" alt="visitors">
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="name">Audrey Alexander</span>
+                                                    <span class="job">Team lead at Google</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======= visitors ======= -->
+
+                        <!-- ======= courses ======= -->
+                        <div class="card mb-4" id="courses">
+                            <div class="title-area">
+                                <span class="title">You May Like These Courses</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <img class="card-img-icon position-absolute"
+                                                        src="img/main/course-play.svg">
+                                                    <img class="align-self-center" src="img/main/course1.jpg"
+                                                        alt="courses">
+                                                </div>
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="title">UX Foundations : Prototyping</span>
+                                                    <span class="viewers">27,959 viewers</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <img class="card-img-icon position-absolute"
+                                                        src="img/main/course-play.svg">
+                                                    <img class="align-self-center" src="img/main/course2.jpg"
+                                                        alt="courses">
+                                                </div>
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="title">Designing with Adobe XD and pro</span>
+                                                    <span class="viewers">9,122 viewers</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex flex-column mb-3">
+                                            <div class="media d-flex">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <img class="card-img-icon position-absolute"
+                                                        src="img/main/course-play.svg">
+                                                    <img class="align-self-center" src="img/main/course3.jpg"
+                                                        alt="courses">
+                                                </div>
+                                                <div class="media-body d-flex flex-column">
+                                                    <span class="title">UX Foundations : Styles and GUIs</span>
+                                                    <span class="viewers">13,858 viewers</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="a-text">See All Recomendations</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ======= courses ======= -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= footer ======= -->
+    <footer id="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12 col-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 d-md-block d-sm-none d-none">
+                                    <div class="d-block mb-3">
+                                        <img src="img/footer/footer-logo.svg" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-6 col-sm-12 col-12" id="nav">
+                                    <h5>Navigation</h5>
+                                    <ul class="list-unstyled text-small footer-menu d-flex flex-wrap">
+                                        <li><a class="text-muted" href="#">About</a></li>
+                                        <li><a class="text-muted" href="#">Talent Solutions</a></li>
+                                        <li><a class="text-muted" href="#">Community Guidelines</a></li>
+                                        <li><a class="text-muted" href="#">Careers</a></li>
+                                        <li><a class="text-muted" href="#">Marketing Solutions</a></li>
+                                        <li><a class="text-muted" href="#">Privacy & Terms</a></li>
+                                        <li><a class="text-muted" href="#">Advertising</a></li>
+                                        <li><a class="text-muted" href="#">Sales Solutions</a></li>
+                                        <li><a class="text-muted" href="#">Mobile App</a></li>
+                                        <li><a class="text-muted" href="#">Small Business</a></li>
+                                        <li><a class="text-muted" href="#">Safery Center</a></li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="col-lg-3 col-md-4 col-sm-12 col-12 ps-md-5 ps-sm-3 ps-3 my-md-0 my-sm-3 my-3" id="fastaccess">
+                                    <h5>Fast access</h5>
+                                    <ul class="list-unstyled text-small">
+                                        <li><a class="col-12 mb-2 btn btn-primary" href="#">Questions?</a></li>
+                                        <li><a class="col-12 mb-2 btn btn-outline-primary" href="#">Settings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-12">
+                            <h5>Language</h5>
+                            <select class="form-select" aria-label="language">
+                                <option selected>English</option>
+                                <option value="1">Turkish</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ======= footer ======= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".projectswiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+            },
+            breakpoints: {
+                0: {
+                    spaceBetween: 10,
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                },
+                640: {
+                    spaceBetween: 10,
+                    slidesPerView: 2,
+                    slidesPerColumn: 1,
+                },
+                768: {
+                    spaceBetween: 10,
+                    slidesPerView: 2,
+                    slidesPerColumn: 1,
+                },
+                1024: {
+                    spaceBetween: 20,
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
+        <script>
+            var swiper = new Swiper(".skillsswiper", {
+                breakpoints: {
+                    0: {
+                        spaceBetween: 10,
+                        slidesPerView: 1,
+                        slidesPerColumn: 1,
+                    },
+                    640: {
+                        spaceBetween: 10,
+                        slidesPerView: 1,
+                        slidesPerColumn: 1,
+                    },
+                    768: {
+                        spaceBetween: 10,
+                        slidesPerView: 2,
+                        slidesPerColumn: 1,
+                    },
+                    1024: {
+                        spaceBetween: 20,
+                        slidesPerView: 3,
+                    },
+                }
+            });
+        </script>
+    <script>
+
+        //let imageCount = document.querySelector("#order-image-first").children.length;
+
+        //for (let i = 1, j = 0; i <= imageCount; i += 1, j += 10) {
+
+        //    document.querySelector(
+
+        //        `#order-image-first span:nth-child(${i})`
+
+        //    ).style.transform = `translateX(-${j}px)`;
+
+        //}
+
+        function showAll() {
+
+            var qText = document.querySelector(".textt");
+
+            qText.classList.toggle("active");
+
+        }
+
+        var qBtn = document.querySelector(".show-all");
+
+        qBtn.addEventListener("click", showAll);
+
+    </script>
+</body>
+
+</html>
