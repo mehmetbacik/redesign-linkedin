@@ -15,7 +15,7 @@ This repository contains the source code for a LinkedIn redesign project. The pr
 - JavaScript
 - CSS
 
-### Clone the Repository
+## Clone the Repository
 
 To clone the project, run the following commands:
 
