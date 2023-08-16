@@ -21,6 +21,8 @@ To clone the project, run the following commands:
 
 ```
 git clone https://github.com/mehmetbacik/redesign-linkedin.git
+```
+```
 cd redesign-linkedin
 ```
 
